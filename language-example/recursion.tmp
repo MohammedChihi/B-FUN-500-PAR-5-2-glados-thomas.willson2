@@ -1,0 +1,17 @@
+function int recursive_example(var int n)
+{
+    if (n == 0) {
+        return 1;
+    } else {
+        return (n * recursive_example(n - 1));
+    }
+}
+
+int main() {
+    var int tmp = recursive_example(2);
+
+    print(tmp);
+    print(recursive_example(3));
+
+    return 0;
+}

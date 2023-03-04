@@ -1,0 +1,8 @@
+function string isNegative(var int x)
+{
+  if (x < 0) {
+    return "yes";
+  } else {
+    return "no";
+  }
+}

@@ -1,0 +1,9 @@
+function int test(var int check)
+{
+    if (check + 1 > 10) {
+        check -= 10;
+    } else {
+        check += 10;
+    }
+    return (check + 10);
+}

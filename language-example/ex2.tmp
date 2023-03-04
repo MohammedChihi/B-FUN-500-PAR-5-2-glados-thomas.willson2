@@ -1,0 +1,4 @@
+function int add(var int a, var int b)
+{
+  return (a + b);
+}

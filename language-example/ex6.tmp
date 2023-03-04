@@ -1,0 +1,7 @@
+function int loop(var int x)
+{
+  x += 10;
+  return x;
+}
+
+(loop(5));

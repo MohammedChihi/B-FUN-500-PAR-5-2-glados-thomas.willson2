@@ -1,0 +1,14 @@
+function int factorial(var int n) {
+    if (n == 0) {
+        return 1;
+    } else {
+        var int tmp = (factorial(tmp));
+        return (n * tmp);
+    }
+}
+
+function int main(void) {
+    var int n = 5;
+    var int result = (factorial(n));
+    return 0;
+}

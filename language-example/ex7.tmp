@@ -1,0 +1,12 @@
+function int useless(void)
+{
+    return 1;
+}
+
+function int loop(var int x)
+{
+  while (x != 20) {
+    x += 1;
+  }
+  return ((useless(void)));
+}

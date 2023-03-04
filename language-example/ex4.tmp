@@ -1,0 +1,9 @@
+function int loop(var int x)
+{
+  while (x != 20) {
+    x += 1;
+  }
+  return x;
+}
+
+(loop(5));

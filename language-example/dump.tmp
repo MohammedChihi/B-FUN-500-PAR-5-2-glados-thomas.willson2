@@ -1,0 +1,111 @@
+function int function_name(var int args)
+{
+    var int ret = 10;
+
+    return ret;
+}
+
+function int tmp(var int nb)
+{
+    var int ret = 0;
+
+    ret = 1 + 2 + 3 + 4 + inc();
+
+    if (nb == 42 || nb == 0) {
+        ret = 1;
+    } else {
+        ret = 2;
+    }
+    return ret;
+}
+
+VarList [
+    VarString "function", VarString "int", VarString "function_name"
+    , VarList [VarString "var", VarString "int", VarString "args"]
+    , VarList [
+        VarString "var", VarString "int", VarString "ret", VarString "=", VarInt 10,
+        VarString "return", VarString "ret"
+        ]
+]
+
+
+function int function_name(var int args, var string args2)
+{
+    var int ret = 10;
+
+    return ret;
+}
+
+VarList [
+    VarString "function", VarString "int", VarString "function_name"
+    , VarList [
+        VarString "var", VarString "int", VarString "args",
+        VarString "var", VarString "string", VarString "args2"
+        ]
+    , VarList [
+        VarString "var", VarString "int", VarString "ret", VarString "=", VarInt 10,
+        VarString "return", VarString "ret"
+        ]
+]
+
+function int main()
+{
+    return (var int 1);
+}
+
+if (cond::bool ) {statements}
+
+while (cond::bool) {statements}
+
+Opérators =  arg1 op arg2
+ - op bitwise : '|' '&' '^' '~'
+ - op logical : '||' '&&' '!'
+ - assignement : '=' '+=' '-=' '*=' '/=' '%='
+ - op incrementation : (pre '++a' '--a') (post 'a++' 'a--')
+ - op relative : '+' '-' '*' '/' '%'
+ - op compraison : '==' '!=' '>' '<' '>=' '<='
+
+function -> keyword
+    - in scope with '{', '}'
+    - statements end with ';'
+return -> keyword
+    - work with '(thing we return)' 
+        - paranthesis if function call, big operation 
+    - end of scope
+main -> keyword
+    - root of programm
+    - no main : error
+if -> keyword
+    - cond
+else -> keyword
+********************** HANDLE IF ELSE IN THE FIRST PLACE AND SEE LATER **********************
+else if -> keyword
+    - cond
+while -> keyword
+    - cond
+for -> keyword ??? eventualy (if time)
+    - init
+    - cond
+    - incrémentation
+
+print -> comme en python just print ?
+      ->  comme en C avec le format ?
+
+var char name;
+
+
+
+var string name; 
+
+var float name;
+
+var dataType[] name;
+    var int[] tmp = [1, 2, 3, 4, 5]
+    var char[] tmp = ['1', '2', '3', '4', '5']
+    var string[] tmp = ["1", "2", "3", "4", "5"]
+
+var boolean name;
+    - True
+    - False
+
+# -> comments

@@ -1,0 +1,15 @@
+function void loop_example(var int n) {
+    var int tmp = n;
+
+    while (tmp != n + 10) {
+        tmp++;
+    }
+    print(tmp);
+}
+
+int main() {
+    loop_example(5);
+    loop_example(15);
+    loop_example(25);
+    return 0;
+}

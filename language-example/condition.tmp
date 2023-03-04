@@ -1,0 +1,65 @@
+if (True) {
+    var i = 1;
+}
+
+[VarString "if", VarBool True]
+[VarString "var", Var String "i", VarString "=", VarInt 1]
+
+if (x == 4) {
+    var i = 2;
+}
+
+[VarString "if", VarString "c", VarString "==", VarInt 4]
+[VarString "var", Var String "i", VarString "=", VarInt 2]
+
+if (someFunc() == 2) {
+    var i = 3;
+}
+
+[VarString "if", VarList [VarString "someFunc"], VarString "==", VarInt 2]
+[VarString "var", Var String "i", VarString "=", VarInt 3]
+
+if (i == someFunc()) {
+    var i = 4;
+}
+
+[VarString "if", VarString "i", VarString "==", VarList [VarString "someFunc"]]
+[VarString "var", Var String "i", VarString "=", VarInt 4]
+
+
+if (i == someFuncWithParam(1, 2)) {
+    var i = 5;
+}
+
+[VarString "if", VarString "i", VarString "==", VarList [VarString "someFunc", VarInt 1, VarInt 2]]
+[VarString "var", Var String "i", VarString "=", VarInt 5]
+
+if (True) {
+    var i = 1;
+} else {
+    var i = 2;
+}
+
+if (x == 4) {
+    var i = 2;
+} else {
+    var i = 3;
+}
+
+if (someFunc() == 2) {
+    var i = 3;
+} else {
+    var i = 4;
+}
+
+if (i == someFunc()) {
+    var i = 4;
+} else {
+    var i = 5;
+}
+
+if (i == someFuncWithParam(1, 2)) {
+    var i = 5;
+} else {
+    var i = 6;
+}
