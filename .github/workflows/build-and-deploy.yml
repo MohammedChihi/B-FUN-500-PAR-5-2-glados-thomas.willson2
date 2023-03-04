@@ -13,5 +13,5 @@ jobs:
         uses: actions/checkout@v2
       - name: Build and deploy
         run: |
-          chmod 777 build-deploy.sh
-          ./build-deploy.sh
+          chmod 777 build-deploy.py
+          ./build-deploy.py
